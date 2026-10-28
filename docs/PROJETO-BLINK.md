@@ -72,6 +72,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Formulário de orçamento reduzido a 3 campos, enviado pelo WhatsApp
 - [x] Lista de serviços com o que a Blink realmente faz e descrição própria para cada um
 - [x] Seção de seguradoras destacando a parceria direta, com o processo em 4 passos
+- [x] Passo 2 do sinistro cita o guincho da seguradora como opção (conforme a apólice)
 
 ### Visual
 - [x] Redesign em tema claro, alinhado ao logo
