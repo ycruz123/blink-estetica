@@ -20,8 +20,9 @@ tomadas. **Atualize este arquivo a cada mudança no site.**
 | Google Meu Negócio | Existe: nota 4,7, 109 avaliações, categoria "Pintura automotiva". **Dono do perfil ainda não identificado** |
 | Horário | Segunda a sexta, das 8h às 18h |
 | Telefone para ligar (botões "Ligar") | (21) 98279-5747 |
-| WhatsApp (todos os botões de WhatsApp) | (21) 96918-7827 |
-| Outros telefones exibidos | Fixo (21) 2439-4259 · Celular (21) 98222-7699 |
+| WhatsApp (todos os botões de WhatsApp) | (21) 98222-7699 |
+| Outros telefones exibidos | Fixo (21) 2439-4259 |
+| Não usar no site | (21) 96918-7827 (é do pessoal do Ricardo) |
 | Seguradoras | **Parceria direta** com as seguradoras (Porto Seguro, Azul, Itaú) |
 
 **Serviços que a Blink faz:** Lanternagem, Pintura Automotiva, Polimento e
@@ -108,6 +109,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] `sitemap.xml` com todas as páginas e `robots.txt`
 - [x] Endereço canônico em cada página
 - [x] Imagem de compartilhamento 1200×630 (`public/og-blink.png`) em todas as páginas
+- [x] Telefones revisados: WhatsApp passa a ser (21) 98222-7699; (21) 96918-7827 saiu do site
 - [x] Página 404 em português
 - [x] Aviso da campanha "siga no Instagram e ganhe 10%" (discreto, sem bloquear a tela)
 - [x] CEP no endereço e Instagram no rodapé e nos dados estruturados (`sameAs`)
@@ -122,8 +124,6 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [ ] **Card "Demais seguradoras":** a imagem mostra Allianz, Bradesco, HDI,
       Mapfre, Zurich, Sompo, Yelum etc. A Blink é parceira de todas? Se não,
       trocar a imagem ou o texto ("Atendemos segurados de outras seguradoras").
-- [ ] **Telefones:** o site mostra 4 números. O ideal é um para ligar e um
-      para WhatsApp. Quais podem sair?
 - [ ] **Sábado:** a oficina abre?
 - [ ] **Perguntas frequentes** (para criar a seção de FAQ com dados estruturados):
       prazo médio de reparo, garantia, se busca/leva o carro, carro reserva
