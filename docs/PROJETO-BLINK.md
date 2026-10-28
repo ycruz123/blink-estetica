@@ -64,9 +64,10 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Domínio `blinkautomotiva.com.br` apontado para o novo projeto (DNS no Registro.br)
 - [x] Next.js atualizado de 14.1.0 para 14.2.35 (correções de segurança)
 - [x] Publicação automática: o Claude faz o merge no `main` depois de validar
-- [x] Acessos do administrador antigo (`salsa200-prog`) removidos: saiu dos
-      colaboradores do GitHub, e o app da Vercel foi reinstalado só na conta
-      do Yuri, com acesso apenas ao repositório `blink-estetica`
+- [x] Administrador antigo (`salsa200-prog`) removido dos colaboradores do
+      GitHub: não consegue mais alterar o código
+- [x] Google Search Console verificado (propriedade Domínio), sitemap
+      processado com 8 páginas e indexação solicitada para todas
 
 ### Conteúdo e conversão
 - [x] Pop-up vencido da "Promoção Copa do Mundo" removido
@@ -128,12 +129,21 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [ ] Fotos de processo: pintura, polimento, aplicação de vitrificação
 - [ ] Uma foto específica para cada página de serviço (hoje elas reaproveitam fotos da galeria)
 
+### Urgente: publicação
+- [ ] **Reconectar o projeto Vercel do Yuri ao GitHub** (Vercel → blink-estetica →
+      Settings → Git). Após a reinstalação do app da Vercel, o build de teste
+      rodou só no projeto antigo (`salsa200-progs-projects`) e não no do Yuri
+      (`yuri-s-projects12`). Sem isso, mudanças não chegam ao site oficial.
+- [ ] Desligar o projeto Vercel do administrador antigo, que ainda recebe
+      cópia do código: pedir para ele apagar o projeto, ou migrar para um
+      repositório novo.
+
 ### Pode ser feito sem depender da Blink
 - [ ] Medição: Vercel Analytics e contagem de cliques em WhatsApp/Ligar
 - [ ] Logo em vetor (SVG), se o original não for encontrado
 
 ### Fora do site (decisivo para o Google)
-- [ ] Cadastrar o site no **Google Search Console** e enviar `https://www.blinkautomotiva.com.br/sitemap.xml`
+- [ ] Em ~2 semanas: analisar Search Console → Desempenho → Consultas com o Yuri
 - [ ] **Google Meu Negócio** completo, com o mesmo endereço e telefone do
       site; telefone principal (21) 98279-5747
 - [ ] Rotina de **pedir avaliação no Google** a cada carro entregue
@@ -145,7 +155,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 ## Aulas (modo aula)
 
 - [x] Aula 1: Como o Google funciona (rastrear, indexar, classificar; busca local)
-- [ ] Aula 2: Search Console
+- [x] Aula 2: Search Console (verificação, sitemap, indexação, relatórios)
 - [ ] Aula 3: Google Meu Negócio
 - [ ] Aula 4: Velocidade e experiência (Core Web Vitals)
 - [ ] Aula 5: Blogs e conteúdo
