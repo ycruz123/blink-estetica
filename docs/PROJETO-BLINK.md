@@ -15,7 +15,9 @@ tomadas. **Atualize este arquivo a cada mudança no site.**
 | Item | Valor |
 |---|---|
 | Nome | Blink Estética Automotiva |
-| Endereço | Rua Joathur Bueno, 272 – Barra da Tijuca, Rio de Janeiro - RJ |
+| Endereço | Rua Joathur Bueno, 272 – Barra da Tijuca, Rio de Janeiro - RJ, CEP 22631-160 (Condomínio Lagoa Mar Sul) |
+| Instagram | [@blinkesteticaauto](https://www.instagram.com/blinkesteticaauto/) |
+| Google Meu Negócio | Existe: nota 4,7, 109 avaliações, categoria "Pintura automotiva". **Dono do perfil ainda não identificado** |
 | Horário | Segunda a sexta, das 8h às 18h |
 | Telefone para ligar (botões "Ligar") | (21) 98279-5747 |
 | WhatsApp (todos os botões de WhatsApp) | (21) 96918-7827 |
@@ -102,6 +104,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Endereço canônico em cada página
 - [x] Imagem de compartilhamento 1200×630 (`public/og-blink.png`) em todas as páginas
 - [x] Página 404 em português
+- [x] CEP no endereço e Instagram no rodapé e nos dados estruturados (`sameAs`)
 - [x] Imagens otimizadas (`next/image`) com textos alternativos descritivos
 - [x] Topo e rodapé como componentes compartilhados (menos JavaScript no navegador)
 
@@ -121,7 +124,6 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
       pela seguradora, formas de pagamento no particular.
 - [ ] **Números reais:** anos de mercado, carros atendidos, garantia.
 - [ ] **História da Blink:** um parágrafo e uma foto do dono ou da equipe.
-- [ ] **Redes sociais** (Instagram etc.) para o rodapé.
 
 ### Precisa de fotos (reais)
 - [ ] Fachada real, de dia, com sol (por volta das 10h), com um carro limpo na entrada
@@ -145,8 +147,10 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 
 ### Fora do site (decisivo para o Google)
 - [ ] Em ~2 semanas: analisar Search Console → Desempenho → Consultas com o Yuri
-- [ ] **Google Meu Negócio** completo, com o mesmo endereço e telefone do
-      site; telefone principal (21) 98279-5747
+- [ ] **Google Meu Negócio:** o perfil já existe (4,7 ★, 109 avaliações).
+      Descobrir quem é o dono (Blink ou administrador antigo?) e conseguir
+      acesso; depois alinhar telefone principal (21) 98279-5747, site,
+      horário e categorias
 - [ ] Rotina de **pedir avaliação no Google** a cada carro entregue
 - [ ] Depois que houver avaliações reais, incluir depoimentos no site
 - [ ] Avaliar o plano Pro da Vercel: o Hobby é para uso não comercial

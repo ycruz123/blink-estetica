@@ -3,6 +3,7 @@ import FormOrcamento from "./FormOrcamento";
 import { btnSecondary, TituloSecao } from "./ui";
 import {
   bairroCidade,
+  cep,
   endereco,
   mapsEmbed,
   mapsLink,
@@ -37,7 +38,9 @@ export default function SecaoContato({
               <p className="text-lg">
                 {endereco}
                 <br />
-                <span className="text-muted">{bairroCidade}</span>
+                <span className="text-muted">
+                  {bairroCidade}, CEP {cep}
+                </span>
               </p>
             </div>
 
