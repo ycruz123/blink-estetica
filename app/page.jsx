@@ -290,8 +290,8 @@ export default function Home() {
               <Image
                 src="/logo-marca.png"
                 alt="Blink Estética Automotiva"
-                width={112}
-                height={93}
+                width={448}
+                height={372}
                 className="h-12 w-auto md:h-14"
                 priority
               />
