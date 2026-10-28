@@ -177,14 +177,9 @@ const servicos = [
       "Recupera a cor e o aspecto de plásticos internos e externos ressecados ou desbotados pelo sol.",
   },
   {
-    nome: "Higienização Interna",
-    descricao:
-      "Limpeza profunda de bancos, carpetes, teto e painel, removendo sujeira, manchas e odores.",
-  },
-  {
     nome: "Detalhamento Automotivo",
     descricao:
-      "Cuidado minucioso de interior e exterior, com atenção a rodas, frisos e acabamentos que a limpeza comum não alcança.",
+      "Cuidado minucioso com a aparência do carro, com atenção a rodas, frisos e acabamentos que a limpeza comum não alcança.",
   },
 ];
 
@@ -219,7 +214,7 @@ const galeria = [
   { src: "/galeria/3.jpg", alt: "Reparo de lanternagem na porta de SUV prata" },
   { src: "/galeria/2.jpg", alt: "Profissional da Blink fazendo acabamento em SUV prata" },
   { src: "/galeria/4.jpg", alt: "Traseira de carro preparada e mascarada para pintura" },
-  { src: "/galeria/6.jpg", alt: "Interior em couro caramelo após detalhamento" },
+  { src: "/galeria/6.jpg", alt: "Interior em couro caramelo de veículo atendido na Blink" },
   { src: "/galeria/1.jpg", alt: "Hyundai HB20 preto finalizado na oficina Blink" },
 ];
 
@@ -546,7 +541,7 @@ export default function Home() {
               </li>
             ))}
 
-            <li className="flex flex-col justify-between rounded-2xl bg-ink p-7 text-white">
+            <li className="flex flex-col justify-between rounded-2xl bg-ink p-7 text-white md:col-span-2">
               <div>
                 <h3 className="text-2xl font-bold">
                   Não sabe qual serviço precisa?
@@ -560,7 +555,7 @@ export default function Home() {
                 href={whatsappLink(msgFoto)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-white px-6 text-lg font-semibold text-ink transition-colors hover:bg-brand-soft"
+                className="mt-6 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-white md:self-start px-6 text-lg font-semibold text-ink transition-colors hover:bg-brand-soft"
               >
                 <WhatsAppIcon className="h-5 w-5 text-brand-dark" />
                 Enviar foto
