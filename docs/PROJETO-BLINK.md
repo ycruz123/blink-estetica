@@ -50,8 +50,10 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
    `#FAFAF8`, cinza `#F1F1EE` e azul-petróleo do logo (`#01A6BC` para
    destaques, `#007C8C` para botões com texto branco). Fontes: Archivo (títulos,
    largura expandida) e Inter (texto).
-5. Toda mudança vai primeiro para o branch de trabalho, para ser revisada
-   no preview da Vercel, e só depois para o `main`.
+5. **Publicação automática autorizada pelo Yuri:** depois de `npm run build`
+   passar e de conferir as páginas no navegador, o Claude publica sozinho.
+   O fluxo é: commit no branch de trabalho, pull request para o `main` e
+   merge. A Vercel publica o `main` automaticamente.
 
 ---
 
@@ -61,6 +63,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Deploy migrado para a conta Vercel do Yuri
 - [x] Domínio `blinkautomotiva.com.br` apontado para o novo projeto (DNS no Registro.br)
 - [x] Next.js atualizado de 14.1.0 para 14.2.35 (correções de segurança)
+- [x] Publicação automática: o Claude faz o merge no `main` depois de validar
 
 ### Conteúdo e conversão
 - [x] Pop-up vencido da "Promoção Copa do Mundo" removido
