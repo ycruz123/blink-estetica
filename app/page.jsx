@@ -290,9 +290,9 @@ export default function Home() {
               <Image
                 src="/logo-marca.png"
                 alt="Blink Estética Automotiva"
-                width={448}
-                height={372}
-                className="h-12 w-auto md:h-14"
+                width={640}
+                height={426}
+                className="h-12 w-auto md:h-16"
                 priority
               />
             </button>
@@ -765,10 +765,11 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-4 md:px-6">
           <div className="md:col-span-1">
             <Image
-              src="/logo-blink.png"
+              src="/logo-branco.png"
               alt="Logo Blink Estética Automotiva"
-              width={80}
-              height={80}
+              width={640}
+              height={426}
+              className="h-16 w-auto"
             />
             <p className="mt-4 text-base text-white/70">
               Lanternagem, pintura e estética automotiva na Barra da Tijuca.

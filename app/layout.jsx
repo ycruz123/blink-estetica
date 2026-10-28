@@ -45,7 +45,7 @@ const jsonLd = {
   name: "Blink Estética Automotiva",
   url: siteUrl,
   image: `${siteUrl}/hero.jpg`,
-  logo: `${siteUrl}/logo-blink.png`,
+  logo: `${siteUrl}/logo-marca.png`,
   telephone: "+55-21-2439-4259",
   address: {
     "@type": "PostalAddress",
