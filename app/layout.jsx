@@ -1,7 +1,18 @@
-import { Inter } from "next/font/google";
+import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  display: "swap",
+  axes: ["wdth"],
+  variable: "--font-archivo",
+});
 
 const siteUrl = "https://www.blinkautomotiva.com.br";
 
@@ -34,7 +45,7 @@ const jsonLd = {
   name: "Blink Estética Automotiva",
   url: siteUrl,
   image: `${siteUrl}/hero.jpg`,
-  logo: `${siteUrl}/logo.png`,
+  logo: `${siteUrl}/logo-blink.png`,
   telephone: "+55-21-2439-4259",
   address: {
     "@type": "PostalAddress",
@@ -64,8 +75,8 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={inter.className}>
-      <body>
+    <html lang="pt-BR" className={`${inter.variable} ${archivo.variable}`}>
+      <body className="font-sans">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
