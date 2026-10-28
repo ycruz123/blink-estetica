@@ -129,14 +129,15 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [ ] Fotos de processo: pintura, polimento, aplicação de vitrificação
 - [ ] Uma foto específica para cada página de serviço (hoje elas reaproveitam fotos da galeria)
 
-### Urgente: publicação
-- [ ] **Reconectar o projeto Vercel do Yuri ao GitHub** (Vercel → blink-estetica →
-      Settings → Git). Após a reinstalação do app da Vercel, o build de teste
-      rodou só no projeto antigo (`salsa200-progs-projects`) e não no do Yuri
-      (`yuri-s-projects12`). Sem isso, mudanças não chegam ao site oficial.
-- [ ] Desligar o projeto Vercel do administrador antigo, que ainda recebe
-      cópia do código: pedir para ele apagar o projeto, ou migrar para um
-      repositório novo.
+### Acesso do projeto antigo
+- [x] Projeto Vercel do Yuri (`yuri-s-projects12`) conectado ao GitHub e
+      publicando o site oficial. Os dois projetos (o do Yuri e o antigo) têm o
+      mesmo nome, então o GitHub mostra só o status de quem termina por último;
+      isso não indica falha.
+- [ ] Desligar o projeto Vercel do administrador antigo
+      (`salsa200-progs-projects`), que ainda recebe cópia do código a cada
+      mudança: pedir para ele apagar o projeto, ou migrar para um repositório
+      novo. Não afeta o site oficial (o domínio está na conta do Yuri).
 
 ### Pode ser feito sem depender da Blink
 - [ ] Medição: Vercel Analytics e contagem de cliques em WhatsApp/Ligar
