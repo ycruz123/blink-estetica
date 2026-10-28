@@ -46,7 +46,7 @@ const jsonLd = {
   url: siteUrl,
   image: `${siteUrl}/hero.jpg`,
   logo: `${siteUrl}/logo-marca.png`,
-  telephone: "+55-21-2439-4259",
+  telephone: "+55-21-98279-5747",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Rua Joathur Bueno, 272",

@@ -132,12 +132,13 @@ const whatsappLink = (msg) =>
   `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
 
 const telefones = [
+  { label: "(21) 98279-5747", tipo: "Atendimento por telefone", href: "tel:+5521982795747" },
   { label: "(21) 2439-4259", tipo: "Telefone fixo", href: "tel:+552124394259" },
   { label: "(21) 96918-7827", tipo: "Celular e WhatsApp", href: "tel:+5521969187827" },
   { label: "(21) 98222-7699", tipo: "Celular", href: "tel:+5521982227699" },
 ];
 
-const telefoneFixo = telefones[0];
+const telefoneLigar = telefones[0];
 
 const endereco = "Rua Joathur Bueno, 272";
 const mapsLink =
@@ -274,11 +275,11 @@ export default function Home() {
               Segunda a sexta, das 8h às 18h
             </span>
             <a
-              href={telefoneFixo.href}
+              href={telefoneLigar.href}
               className="flex items-center gap-2 font-semibold text-white hover:text-brand"
             >
               <PhoneIcon className="h-4 w-4" />
-              {telefoneFixo.label}
+              {telefoneLigar.label}
             </a>
           </span>
         </div>
@@ -387,15 +388,15 @@ export default function Home() {
                 Pedir orçamento no WhatsApp
               </a>
 
-              <a href={telefoneFixo.href} className={btnSecondary}>
+              <a href={telefoneLigar.href} className={btnSecondary}>
                 <PhoneIcon className="h-5 w-5" />
-                {telefoneFixo.label}
+                {telefoneLigar.label}
               </a>
             </div>
 
             <ul className="mt-10 space-y-3 text-base text-ink/85 md:text-lg">
               {[
-                "Atendimento para sinistros de seguradora",
+                "Oficina parceira das seguradoras",
                 "Segunda a sexta, das 8h às 18h",
                 `${endereco} – fácil de chegar`,
               ].map((item) => (
@@ -445,15 +446,16 @@ export default function Home() {
       <section id="seguradoras" className="scroll-mt-20 bg-mist py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-6">
           <div className="max-w-3xl">
-            <Eyebrow>Sinistro e seguradoras</Eyebrow>
+            <Eyebrow>Oficina parceira das seguradoras</Eyebrow>
 
             <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight md:text-5xl">
               Bateu o carro? A gente resolve com a sua seguradora.
             </h2>
 
             <p className="mt-5 text-lg text-muted">
-              Atendimento ágil para sinistros, aprovação rápida e suporte
-              completo durante todo o processo.
+              A Blink tem parceria direta com as seguradoras: atendimento ágil
+              para sinistros, aprovação rápida e suporte completo durante todo
+              o processo.
             </p>
           </div>
 
@@ -836,7 +838,7 @@ export default function Home() {
       {/* BARRA FIXA NO CELULAR */}
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-3 border-t border-line bg-white/95 p-3 backdrop-blur-md md:hidden">
         <a
-          href={telefoneFixo.href}
+          href={telefoneLigar.href}
           className="flex h-12 items-center justify-center gap-2 rounded-xl border-2 border-ink/15 text-lg font-semibold text-ink"
         >
           <PhoneIcon className="h-5 w-5" />
