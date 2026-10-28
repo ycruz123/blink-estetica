@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PhoneIcon, WhatsAppIcon } from "./Icones";
+import { InstagramIcon, PhoneIcon, WhatsAppIcon } from "./Icones";
 import {
   bairroCidade,
+  cep,
   endereco,
+  instagram,
   mapsLink,
   msgOrcamento,
   nomeEmpresa,
@@ -33,6 +35,15 @@ export default function Rodape() {
               Lanternagem, pintura e estética automotiva na Barra da Tijuca.
               Oficina parceira das seguradoras.
             </p>
+            <a
+              href={instagram.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 text-base text-white/85 hover:text-white"
+            >
+              <InstagramIcon className="h-5 w-5" />
+              {instagram.usuario}
+            </a>
           </div>
 
           <nav aria-label="Serviços">
@@ -64,6 +75,8 @@ export default function Rodape() {
               {endereco}
               <br />
               {bairroCidade}
+              <br />
+              CEP {cep}
             </a>
 
             <h2 className={`${tituloColuna} mt-6`}>Horário</h2>
