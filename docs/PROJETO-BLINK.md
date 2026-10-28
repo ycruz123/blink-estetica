@@ -64,6 +64,9 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Domínio `blinkautomotiva.com.br` apontado para o novo projeto (DNS no Registro.br)
 - [x] Next.js atualizado de 14.1.0 para 14.2.35 (correções de segurança)
 - [x] Publicação automática: o Claude faz o merge no `main` depois de validar
+- [x] Acessos do administrador antigo (`salsa200-prog`) removidos: saiu dos
+      colaboradores do GitHub, e o app da Vercel foi reinstalado só na conta
+      do Yuri, com acesso apenas ao repositório `blink-estetica`
 
 ### Conteúdo e conversão
 - [x] Pop-up vencido da "Promoção Copa do Mundo" removido
