@@ -20,7 +20,7 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   title: "Lanternagem e Pintura na Barra da Tijuca | Blink Estética Automotiva",
   description:
-    "Oficina de lanternagem, pintura automotiva e polimento técnico na Barra da Tijuca (RJ). Atendemos sinistros de seguradora. Peça seu orçamento pelo WhatsApp.",
+    "Lanternagem, pintura, polimento e cristalização, vitrificação e higienização interna na Barra da Tijuca (RJ). Atendemos sinistros de seguradora. Orçamento pelo WhatsApp.",
   alternates: {
     canonical: "/",
   },
@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "Blink Estética Automotiva",
     title: "Lanternagem e Pintura na Barra da Tijuca | Blink Estética Automotiva",
     description:
-      "Lanternagem, pintura e polimento técnico na Barra da Tijuca. Atendimento para sinistros de seguradora.",
+      "Lanternagem, pintura, polimento, vitrificação e estética automotiva na Barra da Tijuca. Atendimento para sinistros de seguradora.",
     images: [{ url: "/hero.jpg", alt: "Fachada da Blink Estética Automotiva" }],
   },
   icons: {

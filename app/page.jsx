@@ -162,19 +162,29 @@ const servicos = [
       "Pintura parcial ou completa, com preparo da superfície e acerto de cor para igualar ao restante do carro.",
   },
   {
-    nome: "Polimento Técnico",
+    nome: "Polimento e Cristalização",
     descricao:
-      "Correção de riscos superficiais, manchas e marcas de lavagem, recuperando o brilho e a profundidade da pintura.",
+      "Polimento técnico para corrigir riscos superficiais e manchas, seguido de cristalização para realçar o brilho da pintura.",
   },
   {
-    nome: "Detalhamento",
+    nome: "Vitrificação",
     descricao:
-      "Limpeza minuciosa de interior e exterior: bancos, painel, plásticos, rodas e acabamentos.",
+      "Camada de proteção sobre a pintura que facilita a limpeza e ajuda a manter o brilho por mais tempo.",
   },
   {
-    nome: "Acabamento",
+    nome: "Revitalização de Plásticos",
     descricao:
-      "Revisão final depois do reparo, para o carro ser entregue sem marcas do serviço.",
+      "Recupera a cor e o aspecto de plásticos internos e externos ressecados ou desbotados pelo sol.",
+  },
+  {
+    nome: "Higienização Interna",
+    descricao:
+      "Limpeza profunda de bancos, carpetes, teto e painel, removendo sujeira, manchas e odores.",
+  },
+  {
+    nome: "Detalhamento Automotivo",
+    descricao:
+      "Cuidado minucioso de interior e exterior, com atenção a rodas, frisos e acabamentos que a limpeza comum não alcança.",
   },
 ];
 
@@ -366,8 +376,9 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg text-muted md:text-xl">
-              Lanternagem, pintura, polimento técnico e detalhamento em um só
-              lugar, com atendimento para sinistros de seguradora.
+              Lanternagem, pintura, polimento, vitrificação e estética
+              automotiva em um só lugar, com atendimento para sinistros de
+              seguradora.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -519,7 +530,7 @@ export default function Home() {
             </p>
           </div>
 
-          <ul className="mt-12 grid gap-4 md:grid-cols-3 md:gap-6">
+          <ul className="mt-12 grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
             {servicos.map((s, i) => (
               <li
                 key={s.nome}
