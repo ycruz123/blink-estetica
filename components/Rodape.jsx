@@ -97,10 +97,10 @@ export default function Rodape() {
       </footer>
 
       {/* BARRA FIXA NO CELULAR */}
-      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-3 border-t border-line bg-white/95 p-3 backdrop-blur-md md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2.5 border-t border-line bg-white/95 px-3 py-2.5 backdrop-blur-md md:hidden">
         <a
           href={telefoneLigar.href}
-          className="flex h-12 items-center justify-center gap-2 rounded-xl border-2 border-ink/15 text-lg font-semibold text-ink"
+          className="flex h-11 items-center justify-center gap-2 rounded-xl border-2 border-ink/15 text-base font-semibold text-ink"
         >
           <PhoneIcon className="h-5 w-5" />
           Ligar
@@ -110,7 +110,7 @@ export default function Rodape() {
           href={whatsappLink(msgOrcamento)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-12 items-center justify-center gap-2 rounded-xl bg-brand-dark text-lg font-semibold text-white"
+          className="flex h-11 items-center justify-center gap-2 rounded-xl bg-brand-dark text-base font-semibold text-white"
         >
           <WhatsAppIcon className="h-5 w-5" />
           WhatsApp

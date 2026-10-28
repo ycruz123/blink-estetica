@@ -49,14 +49,14 @@ export default function Cabecalho() {
 
       <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <nav className="flex h-[72px] items-center justify-between md:h-20">
+          <nav className="flex h-16 items-center justify-between md:h-20">
             <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
               <Image
                 src="/logo-marca.png"
                 alt="Blink Estética Automotiva"
                 width={640}
                 height={426}
-                className="h-12 w-auto md:h-16"
+                className="h-10 w-auto md:h-16"
                 priority
               />
             </Link>
@@ -90,7 +90,7 @@ export default function Cabecalho() {
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Fechar menu" : "Abrir menu"}
               aria-expanded={open}
-              className="flex h-12 w-12 items-center justify-center rounded-xl border border-line text-ink md:hidden"
+              className="flex h-11 w-11 items-center justify-center rounded-xl border border-line text-ink md:hidden"
             >
               <MenuIcon open={open} className="h-6 w-6" />
             </button>

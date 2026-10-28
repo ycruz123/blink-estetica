@@ -80,7 +80,7 @@ export default function PaginaServico({ params }) {
       <JsonLd data={jsonLd} />
 
       <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-5 pt-8 md:px-6 md:pt-10">
+        <div className="mx-auto max-w-7xl px-5 pt-5 md:px-6 md:pt-10">
           <Breadcrumb
             itens={[
               { nome: "Início", href: "/" },
@@ -90,19 +90,19 @@ export default function PaginaServico({ params }) {
           />
         </div>
 
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 pt-8 md:grid-cols-2 md:gap-16 md:px-6 md:pb-24 md:pt-12">
+        <div className="mx-auto grid max-w-7xl items-center gap-7 px-5 pb-12 pt-5 md:grid-cols-2 md:gap-16 md:px-6 md:pb-24 md:pt-12">
           <div>
             <Eyebrow>Serviço · Barra da Tijuca</Eyebrow>
 
-            <h1 className="mt-5 font-display text-[2.4rem] font-extrabold leading-[1.05] md:text-6xl">
+            <h1 className="mt-4 font-display text-[2.05rem] font-extrabold leading-[1.05] md:mt-5 md:text-6xl">
               {servico.titulo}
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg text-muted md:text-xl">
+            <p className="mt-4 max-w-xl text-lg text-muted md:mt-6 md:text-xl">
               {servico.intro}
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8">
               <a
                 href={whatsappLink(msgServico(servico.nome))}
                 target="_blank"
@@ -120,7 +120,7 @@ export default function PaginaServico({ params }) {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-[480px] overflow-hidden rounded-[28px] bg-mist shadow-[0_30px_60px_-30px_rgba(22,24,27,0.45)]">
+          <div className="relative order-first mx-auto aspect-[4/3] w-full max-w-[480px] overflow-hidden rounded-2xl bg-mist shadow-[0_30px_60px_-30px_rgba(22,24,27,0.45)] md:order-none md:aspect-[4/5] md:rounded-[28px]">
             <Image
               src={servico.imagem.src}
               alt={servico.imagem.alt}
@@ -133,17 +133,17 @@ export default function PaginaServico({ params }) {
         </div>
       </section>
 
-      <section className="bg-mist py-20 md:py-24">
+      <section className="bg-mist py-14 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-2 md:gap-16 md:px-6">
           <div>
-            <h2 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
+            <h2 className="font-display text-[1.75rem] font-extrabold leading-tight md:text-4xl">
               Quando fazer {servico.nome.toLowerCase()}
             </h2>
             <ListaChecks className="mt-8" itens={servico.quando} />
           </div>
 
           <div>
-            <h2 className="font-display text-3xl font-extrabold leading-tight md:text-4xl">
+            <h2 className="font-display text-[1.75rem] font-extrabold leading-tight md:text-4xl">
               Como é feito
             </h2>
             {servico.detalhes.map((p) => (
@@ -155,7 +155,7 @@ export default function PaginaServico({ params }) {
         </div>
       </section>
 
-      <section className="bg-paper py-20 md:py-24">
+      <section className="bg-paper py-14 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-6">
           <PassosNumerados
             passos={passosServico}
@@ -164,7 +164,7 @@ export default function PaginaServico({ params }) {
           />
 
           {servico.sinistro && (
-            <div className="mt-12 flex flex-col gap-6 rounded-3xl bg-ink p-7 text-white md:flex-row md:items-center md:justify-between md:p-10">
+            <div className="mt-12 flex flex-col gap-6 rounded-3xl bg-ink p-6 text-white md:flex-row md:items-center md:justify-between md:p-10">
               <div>
                 <p className="font-display text-2xl font-bold [font-stretch:112%]">
                   Foi batida? Dá para fazer pelo seguro.
@@ -176,7 +176,7 @@ export default function PaginaServico({ params }) {
               </div>
               <Link
                 href="/sinistro"
-                className="inline-flex min-h-[52px] shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 text-lg font-semibold text-ink transition-colors hover:bg-brand-soft"
+                className="inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-5 text-base font-semibold md:min-h-[52px] md:px-6 md:text-lg text-ink transition-colors hover:bg-brand-soft"
               >
                 Como funciona
                 <ArrowRightIcon className="h-5 w-5" />
@@ -186,7 +186,7 @@ export default function PaginaServico({ params }) {
         </div>
       </section>
 
-      <section className="bg-mist py-20 md:py-24">
+      <section className="bg-mist py-14 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-6">
           <TituloSecao eyebrow="Outros serviços" titulo="Tudo para o seu carro em um só lugar" />
           <div className="mt-12">

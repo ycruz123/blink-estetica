@@ -79,12 +79,12 @@ export function CardsServicos({
         <li key={s.slug}>
           <Link
             href={`/${s.slug}`}
-            className="group flex h-full flex-col rounded-2xl border border-line bg-white p-7 transition-colors hover:border-brand"
+            className="group flex h-full flex-col rounded-2xl border border-line bg-white p-5 transition-colors hover:border-brand md:p-7"
           >
             <span className="text-sm font-semibold text-brand-dark">
               {String(servicos.indexOf(s) + 1).padStart(2, "0")}
             </span>
-            <Tag className="mt-2 text-2xl font-bold">{s.nome}</Tag>
+            <Tag className="mt-2 text-xl font-bold md:text-2xl">{s.nome}</Tag>
             <p className="mt-3 flex-1 text-base text-muted md:text-lg">
               {s.resumo}
             </p>
