@@ -28,8 +28,13 @@ tomadas. **Atualize este arquivo a cada mudança no site.**
 Cristalização, Vitrificação, Revitalização de Plásticos e Detalhamento
 Automotivo.
 
-**Serviços que a Blink NÃO faz:** Lavagem completa e Higienização interna.
-Não colocar no site.
+**Serviços que a Blink NÃO faz:** Lavagem completa e Higienização interna
+(a higienização pode voltar quando houver profissional; o Instagram ainda tem
+um vídeo antigo sobre ela). Não colocar no site.
+
+**Campanha ativa:** quem segue o Instagram ganha 10% de desconto em serviços
+particulares (pedido do Yuri). Aparece como aviso discreto no canto da tela;
+liga/desliga em `campanhaInstagram.ativa` em `lib/dados.js`.
 
 Todos esses dados ficam centralizados em `lib/dados.js`.
 
@@ -104,6 +109,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Endereço canônico em cada página
 - [x] Imagem de compartilhamento 1200×630 (`public/og-blink.png`) em todas as páginas
 - [x] Página 404 em português
+- [x] Aviso da campanha "siga no Instagram e ganhe 10%" (discreto, sem bloquear a tela)
 - [x] CEP no endereço e Instagram no rodapé e nos dados estruturados (`sameAs`)
 - [x] Imagens otimizadas (`next/image`) com textos alternativos descritivos
 - [x] Topo e rodapé como componentes compartilhados (menos JavaScript no navegador)
