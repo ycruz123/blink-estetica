@@ -139,6 +139,16 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 
 ---
 
+## Aulas (modo aula)
+
+- [x] Aula 1: Como o Google funciona (rastrear, indexar, classificar; busca local)
+- [ ] Aula 2: Search Console
+- [ ] Aula 3: Google Meu Negócio
+- [ ] Aula 4: Velocidade e experiência (Core Web Vitals)
+- [ ] Aula 5: Blogs e conteúdo
+
+---
+
 ## Estrutura do código
 
 ```
