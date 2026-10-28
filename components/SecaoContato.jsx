@@ -18,7 +18,7 @@ export default function SecaoContato({
   className = "bg-paper",
 }) {
   return (
-    <section id="contato" className={`scroll-mt-20 py-20 md:py-28 ${className}`}>
+    <section id="contato" className={`scroll-mt-20 py-14 md:py-28 ${className}`}>
       <div className="mx-auto max-w-7xl px-5 md:px-6">
         <TituloSecao
           eyebrow="Contato"

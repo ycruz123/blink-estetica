@@ -48,7 +48,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${archivo.variable}`}>
-      <body className="font-sans pb-[72px] md:pb-0">
+      <body className="font-sans pb-16 md:pb-0">
         <JsonLd data={empresaJsonLd} />
         <Cabecalho />
         <main className="overflow-x-hidden bg-paper text-ink">
