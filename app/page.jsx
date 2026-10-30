@@ -12,6 +12,7 @@ import {
   ListaSeguradoras,
   PassosNumerados,
 } from "../components/Blocos";
+import CampanhaInstagram from "../components/CampanhaInstagram";
 import HeroCarrossel from "../components/HeroCarrossel";
 import SecaoContato from "../components/SecaoContato";
 import { btnPrimary, btnSecondary, Eyebrow, TituloSecao } from "../components/ui";
@@ -206,6 +207,8 @@ export default function Home() {
       </section>
 
       <SecaoContato />
+
+      <CampanhaInstagram />
     </>
   );
 }

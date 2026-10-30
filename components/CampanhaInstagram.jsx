@@ -1,43 +1,46 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { InstagramIcon, WhatsAppIcon } from "./Icones";
 import { campanhaInstagram, instagram, whatsappLink } from "../lib/dados";
 
-const chave = `blink-campanha-fechada-${campanhaInstagram.versao}`;
-
 // Aviso discreto no canto da tela (não cobre o conteúdo, para não ser
-// penalizado pelo Google como pop-up intrusivo). Aparece depois que a
-// pessoa rola a página ou passa alguns segundos, e some de vez ao fechar.
+// penalizado pelo Google como pop-up intrusivo). Fica só na página inicial:
+// aparece cada vez que a pessoa entra ou volta para ela, depois de rolar a
+// página ou passar alguns segundos. Se for fechado, não volta enquanto a
+// pessoa estiver na página; ao ir para outra página e voltar, aparece de novo.
 export default function CampanhaInstagram() {
   const [visivel, setVisivel] = useState(false);
+  const jaApareceu = useRef(false);
 
   useEffect(() => {
     if (!campanhaInstagram.ativa) return;
 
-    try {
-      if (localStorage.getItem(chave)) return;
-    } catch (e) {}
+    let timer;
 
-    const mostrar = () => setVisivel(true);
-    const timer = setTimeout(mostrar, 8000);
-    const aoRolar = () => {
-      if (window.scrollY > 600) mostrar();
-    };
-    window.addEventListener("scroll", aoRolar, { passive: true });
-
-    return () => {
+    const parar = () => {
       clearTimeout(timer);
       window.removeEventListener("scroll", aoRolar);
     };
+
+    const mostrar = () => {
+      if (jaApareceu.current) return;
+      jaApareceu.current = true;
+      setVisivel(true);
+      parar();
+    };
+
+    function aoRolar() {
+      if (window.scrollY > 600) mostrar();
+    }
+
+    timer = setTimeout(mostrar, 8000);
+    window.addEventListener("scroll", aoRolar, { passive: true });
+
+    return parar;
   }, []);
 
-  const fechar = () => {
-    setVisivel(false);
-    try {
-      localStorage.setItem(chave, "1");
-    } catch (e) {}
-  };
+  const fechar = () => setVisivel(false);
 
   if (!visivel) return null;
 

@@ -34,8 +34,11 @@ Automotivo.
 um vídeo antigo sobre ela). Não colocar no site.
 
 **Campanha ativa:** quem segue o Instagram ganha 10% de desconto em serviços
-particulares (pedido do Yuri). Aparece como aviso discreto no canto da tela;
-liga/desliga em `campanhaInstagram.ativa` em `lib/dados.js`.
+particulares (pedido do Yuri). Aparece como aviso discreto no canto da tela,
+**só na página inicial**, toda vez que a pessoa entra ou volta para ela (após
+rolar a página ou 8 segundos). Se fechar, não volta enquanto estiver na página;
+ao ir para outra página e voltar, aparece de novo. Liga/desliga em
+`campanhaInstagram.ativa` em `lib/dados.js`.
 
 Todos esses dados ficam centralizados em `lib/dados.js`.
 
