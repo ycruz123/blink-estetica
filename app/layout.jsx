@@ -1,6 +1,5 @@
 import { Archivo, Inter } from "next/font/google";
 import Cabecalho from "../components/Cabecalho";
-import CampanhaInstagram from "../components/CampanhaInstagram";
 import Rodape from "../components/Rodape";
 import { JsonLd } from "../components/ui";
 import { empresaJsonLd, nomeEmpresa, ogImagem, siteUrl } from "../lib/dados";
@@ -56,7 +55,6 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Rodape />
-        <CampanhaInstagram />
       </body>
     </html>
   );
