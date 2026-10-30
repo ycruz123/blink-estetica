@@ -151,7 +151,10 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
       novo. Não afeta o site oficial (o domínio está na conta do Yuri).
 
 ### Pode ser feito sem depender da Blink
-- [ ] Medição: Vercel Analytics e contagem de cliques em WhatsApp/Ligar
+- [x] Código do Vercel Analytics instalado (contagem de visitas, sem cookies)
+- [ ] **Yuri: ativar o Analytics no painel da Vercel** (projeto → aba Analytics → Enable)
+- [ ] Combinar com a Blink: avisar o Yuri quando chegar mensagem "Vim pelo site" e
+      perguntar "como conheceu a Blink?" nas ligações; planilha mensal de resultados
 - [ ] Logo em vetor (SVG), se o original não for encontrado
 
 ### Fora do site (decisivo para o Google)

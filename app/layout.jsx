@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Archivo, Inter } from "next/font/google";
 import Cabecalho from "../components/Cabecalho";
 import Rodape from "../components/Rodape";
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Rodape />
+        <Analytics />
       </body>
     </html>
   );
