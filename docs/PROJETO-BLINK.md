@@ -34,9 +34,11 @@ Automotivo.
 um vídeo antigo sobre ela). Não colocar no site.
 
 **Black Friday 2026 (ativa):** 15% de desconto em serviços particulares.
-Banner grande na abertura da página inicial (`components/HeroBlackFriday.jsx`:
-foto real, "BLACK FRIDAY 15% OFF", botão para o WhatsApp e contador regressivo
-até o fim). Nas outras páginas, faixa fina no topo com botão para o WhatsApp ("quero aproveitar
+Banner-arte na abertura da página inicial (`components/HeroBlackFriday.jsx`):
+arte flat (sem neon) com foto real, em `public/black-friday/bf-computador-v2.jpg`
+e `bf-celular-v2.jpg`, gerada por `docs/banner-black-friday.py`, com o botão do
+WhatsApp por cima, no espaço livre da arte. O Yuri prefere arte flat e bold,
+sem brilhos/neon. Nas outras páginas, faixa fina no topo com botão para o WhatsApp ("quero aproveitar
 os 15% de desconto da Black Friday"). Enquanto ativa, substitui a faixa de
 endereço/horário (computador) e pausa o aviso do Instagram. Liga/desliga em
 `campanhaBlackFriday.ativa` em `lib/dados.js`. **Válido de 23/11 até 30/11/2026,
