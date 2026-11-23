@@ -107,6 +107,7 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 - [x] Logo novo em alta resolução (`logo-marca.png`) e versão branca para fundo escuro (`logo-branco.png`)
 - [x] Fotos da fachada e da galeria ampliadas 2x com EDSR (sem alterar conteúdo)
 - [x] Logos das seguradoras recortados para fundo branco
+- [x] Ícone do site (favicon, aparece no Google e na aba do navegador) com o logo oficial: `app/icon.png`, `app/apple-icon.png`, `app/favicon.ico`
 - [x] **Celular** (sem mudar o computador): foto no topo da página, antes do
       título; fotos do topo alternando com transição suave (fachada, Mercedes,
       lanternagem); tudo cerca de 6% menor; títulos, espaçamentos e botões mais
