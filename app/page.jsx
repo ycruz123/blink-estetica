@@ -13,6 +13,7 @@ import {
   PassosNumerados,
 } from "../components/Blocos";
 import CampanhaInstagram from "../components/CampanhaInstagram";
+import HeroBlackFriday from "../components/HeroBlackFriday";
 import HeroCarrossel from "../components/HeroCarrossel";
 import SecaoContato from "../components/SecaoContato";
 import { btnPrimary, btnSecondary, Eyebrow, TituloSecao } from "../components/ui";
@@ -31,6 +32,8 @@ import {
 export default function Home() {
   return (
     <>
+      <HeroBlackFriday />
+
       {/* INÍCIO */}
       <section id="inicio" className="bg-paper">
         <div className="mx-auto grid max-w-7xl items-center gap-7 px-5 pb-12 pt-4 md:grid-cols-2 md:gap-16 md:px-6 md:py-24">
