@@ -17,7 +17,7 @@ tomadas. **Atualize este arquivo a cada mudança no site.**
 | Nome | Blink Estética Automotiva |
 | Endereço | Rua Joathur Bueno, 272 – Barra da Tijuca, Rio de Janeiro - RJ, CEP 22631-160 (Condomínio Lagoa Mar Sul) |
 | Instagram | [@blinkesteticaauto](https://www.instagram.com/blinkesteticaauto/) |
-| Google Meu Negócio | Existe: nota 4,7, 109 avaliações, categoria "Pintura automotiva". **Dono do perfil ainda não identificado** |
+| Google Meu Negócio | Existe: nota 4,7, 109 avaliações, categoria "Pintura automotiva". Link do site adicionado em 23/11/2026 (sugestão de edição feita pelo Yuri como visitante, aceita pelo Google). **Dono do perfil ainda não identificado** |
 | Horário | Segunda a sexta, das 8h às 18h |
 | Telefone para ligar (botões "Ligar") | (21) 98279-5747 |
 | WhatsApp (todos os botões de WhatsApp) | (21) 98222-7699 |
@@ -178,10 +178,12 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 
 ### Fora do site (decisivo para o Google)
 - [ ] Em ~2 semanas: analisar Search Console → Desempenho → Consultas com o Yuri
+- [x] Link do site no perfil do Google Maps (23/11/2026, via sugestão de edição)
 - [ ] **Google Meu Negócio:** o perfil já existe (4,7 ★, 109 avaliações).
       Descobrir quem é o dono (Blink ou administrador antigo?) e conseguir
-      acesso; depois alinhar telefone principal (21) 98279-5747, site,
-      horário e categorias
+      acesso; sem isso, sugestões de edição podem ser revertidas. Depois
+      alinhar telefone principal, horário, categorias e fotos. Na busca
+      "lanternagem barra" a Blink é 1º no orgânico, mas não aparece no mapa
 - [ ] Rotina de **pedir avaliação no Google** a cada carro entregue
 - [ ] Depois que houver avaliações reais, incluir depoimentos no site
 - [ ] Avaliar o plano Pro da Vercel: o Hobby é para uso não comercial
