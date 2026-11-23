@@ -10,7 +10,9 @@ import {
   PinIcon,
   WhatsAppIcon,
 } from "./Icones";
+import BannerBlackFriday from "./BannerBlackFriday";
 import {
+  campanhaBlackFriday,
   endereco,
   horario,
   msgOrcamento,
@@ -24,8 +26,14 @@ export default function Cabecalho() {
 
   return (
     <>
-      {/* FAIXA SUPERIOR */}
-      <div className="hidden bg-ink text-white/85 md:block">
+      <BannerBlackFriday />
+
+      {/* FAIXA SUPERIOR (some enquanto a Black Friday estiver ativa) */}
+      <div
+        className={`hidden bg-ink text-white/85 ${
+          campanhaBlackFriday.ativa ? "" : "md:block"
+        }`}
+      >
         <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-6 text-sm">
           <span className="flex items-center gap-2">
             <PinIcon className="h-4 w-4" />

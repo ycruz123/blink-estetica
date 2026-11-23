@@ -2,7 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { InstagramIcon, WhatsAppIcon } from "./Icones";
-import { campanhaInstagram, instagram, whatsappLink } from "../lib/dados";
+import {
+  campanhaBlackFriday,
+  campanhaInstagram,
+  instagram,
+  whatsappLink,
+} from "../lib/dados";
 
 // Aviso discreto no canto da tela (não cobre o conteúdo, para não ser
 // penalizado pelo Google como pop-up intrusivo). Fica só na página inicial:
@@ -14,7 +19,7 @@ export default function CampanhaInstagram() {
   const jaApareceu = useRef(false);
 
   useEffect(() => {
-    if (!campanhaInstagram.ativa) return;
+    if (!campanhaInstagram.ativa || campanhaBlackFriday.ativa) return;
 
     let timer;
 

@@ -102,3 +102,25 @@ body {
     display: none;
   }
 }
+
+/* Seta do botão da Black Friday: um leve "empurrão" para a direita,
+   indicando onde clicar */
+.seta-cta {
+  animation: seta-cta 1.6s ease-in-out infinite;
+}
+
+@keyframes seta-cta {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seta-cta {
+    animation: none;
+  }
+}
