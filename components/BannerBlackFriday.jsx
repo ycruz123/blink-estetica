@@ -1,5 +1,5 @@
 import { ArrowRightIcon } from "./Icones";
-import { campanhaBlackFriday, whatsappLink } from "../lib/dados";
+import { campanhaBlackFriday, linkWhatsApp } from "../lib/dados";
 
 // Faixa da Black Friday no topo do site. É texto de verdade (não imagem),
 // para ficar nítida em qualquer tela e o Google conseguir ler.
@@ -19,7 +19,7 @@ export default function BannerBlackFriday() {
 
   return (
     <a
-      href={whatsappLink(msgWhatsApp)}
+      href={linkWhatsApp("faixa-black-friday", msgWhatsApp)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${selo}: ${destaque} ${texto}, ${prazo}, ${regra}. ${chamada} pelo WhatsApp`}

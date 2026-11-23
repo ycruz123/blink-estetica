@@ -20,7 +20,7 @@ import {
   msgOrcamento,
   navItems,
   telefoneLigar,
-  whatsappLink,
+  linkWhatsApp,
 } from "../lib/dados";
 
 export default function Cabecalho() {
@@ -89,7 +89,7 @@ export default function Cabecalho() {
               ))}
               <li>
                 <a
-                  href={whatsappLink(msgOrcamento)}
+                  href={linkWhatsApp("menu", msgOrcamento)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex h-11 items-center gap-2 rounded-xl bg-brand-dark px-5 text-base font-semibold text-white transition-colors hover:bg-brand-darker"

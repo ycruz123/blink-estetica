@@ -165,6 +165,12 @@ Todos esses dados ficam centralizados em `lib/dados.js`.
 
 ### Pode ser feito sem depender da Blink
 - [x] Código do Vercel Analytics instalado (contagem de visitas, sem cookies)
+- [x] **Contagem de cliques no WhatsApp:** todo botão passa por
+      `/whatsapp/<origem>` (página de passagem, sem indexação) antes de abrir o
+      WhatsApp. No Vercel Analytics → Pages, cada origem aparece separada:
+      `banner-black-friday`, `faixa-black-friday`, `inicio`, `inicio-sinistro`,
+      `enviar-foto`, `menu`, `barra-celular`, `formulario`, `aviso-instagram`,
+      `pagina-sinistro`, `servico-<serviço>`
 - [ ] **Yuri: ativar o Analytics no painel da Vercel** (projeto → aba Analytics → Enable)
 - [ ] Combinar com a Blink: avisar o Yuri quando chegar mensagem "Vim pelo site" e
       perguntar "como conheceu a Blink?" nas ligações; planilha mensal de resultados

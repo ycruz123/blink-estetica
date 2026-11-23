@@ -12,7 +12,7 @@ import {
   servicos,
   telefoneLigar,
   telefones,
-  whatsappLink,
+  linkWhatsApp,
 } from "../lib/dados";
 
 const tituloColuna =
@@ -120,7 +120,7 @@ export default function Rodape() {
         </a>
 
         <a
-          href={whatsappLink(msgOrcamento)}
+          href={linkWhatsApp("barra-celular", msgOrcamento)}
           target="_blank"
           rel="noopener noreferrer"
           className="flex h-11 items-center justify-center gap-2 rounded-xl bg-brand-dark text-base font-semibold text-white"

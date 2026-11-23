@@ -18,7 +18,7 @@ import {
   servicos,
   siteUrl,
   telefoneLigar,
-  whatsappLink,
+  linkWhatsApp,
 } from "../../lib/dados";
 
 export const dynamicParams = false;
@@ -104,7 +104,7 @@ export default function PaginaServico({ params }) {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8">
               <a
-                href={whatsappLink(msgServico(servico.nome))}
+                href={linkWhatsApp(`servico-${servico.slug}`, msgServico(servico.nome))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={btnPrimary}
