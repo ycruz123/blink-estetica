@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   ClockIcon,
@@ -24,6 +25,7 @@ import {
 
 export default function Cabecalho() {
   const [open, setOpen] = useState(false);
+  const naInicial = usePathname() === "/";
   const [blackFriday, setBlackFriday] = useState(campanhaBlackFriday.ativa);
 
   // Confere a data no navegador: depois do fim da campanha, a faixa some.
@@ -31,7 +33,7 @@ export default function Cabecalho() {
 
   return (
     <>
-      {blackFriday && <BannerBlackFriday />}
+      {blackFriday && !naInicial && <BannerBlackFriday />}
 
       {/* FAIXA SUPERIOR (some enquanto a Black Friday estiver ativa) */}
       <div
