@@ -23,18 +23,8 @@ export default function BannerBlackFriday() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${selo}: ${destaque} ${texto}, ${prazo}, ${regra}. ${chamada} pelo WhatsApp`}
-      className="group relative block overflow-hidden bg-ink text-white"
+      className="group relative block border-b-4 border-brand bg-ink text-white"
     >
-      {/* brilho azul-petróleo atrás do texto */}
-      <span
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(1,166,188,0.35),transparent_60%)]"
-      />
-      <span
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-transparent via-brand to-transparent"
-      />
-
       <span className="relative mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 md:h-16 md:px-6 md:py-0">
         <span className="flex min-w-0 flex-col md:flex-row md:items-center md:gap-4">
           <span className="flex items-center gap-2">
