@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { InstagramIcon, WhatsAppIcon } from "./Icones";
 import {
-  campanhaBlackFriday,
+  blackFridayNoAr,
   campanhaInstagram,
   instagram,
   whatsappLink,
@@ -19,7 +19,7 @@ export default function CampanhaInstagram() {
   const jaApareceu = useRef(false);
 
   useEffect(() => {
-    if (!campanhaInstagram.ativa || campanhaBlackFriday.ativa) return;
+    if (!campanhaInstagram.ativa || blackFridayNoAr()) return;
 
     let timer;
 

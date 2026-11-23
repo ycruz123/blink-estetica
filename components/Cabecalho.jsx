@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ClockIcon,
   MenuIcon,
@@ -12,6 +12,7 @@ import {
 } from "./Icones";
 import BannerBlackFriday from "./BannerBlackFriday";
 import {
+  blackFridayNoAr,
   campanhaBlackFriday,
   endereco,
   horario,
@@ -23,15 +24,19 @@ import {
 
 export default function Cabecalho() {
   const [open, setOpen] = useState(false);
+  const [blackFriday, setBlackFriday] = useState(campanhaBlackFriday.ativa);
+
+  // Confere a data no navegador: depois do fim da campanha, a faixa some.
+  useEffect(() => setBlackFriday(blackFridayNoAr()), []);
 
   return (
     <>
-      <BannerBlackFriday />
+      {blackFriday && <BannerBlackFriday />}
 
       {/* FAIXA SUPERIOR (some enquanto a Black Friday estiver ativa) */}
       <div
         className={`hidden bg-ink text-white/85 ${
-          campanhaBlackFriday.ativa ? "" : "md:block"
+          blackFriday ? "" : "md:block"
         }`}
       >
         <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-6 text-sm">
