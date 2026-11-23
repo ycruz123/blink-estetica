@@ -6,7 +6,7 @@ import {
   blackFridayNoAr,
   campanhaInstagram,
   instagram,
-  whatsappLink,
+  linkWhatsApp,
 } from "../lib/dados";
 
 // Aviso discreto no canto da tela (não cobre o conteúdo, para não ser
@@ -88,7 +88,7 @@ export default function CampanhaInstagram() {
           Seguir
         </a>
         <a
-          href={whatsappLink(campanhaInstagram.msgWhatsApp)}
+          href={linkWhatsApp("aviso-instagram", campanhaInstagram.msgWhatsApp)}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-brand-dark px-3 text-base font-semibold text-white hover:bg-brand-darker"

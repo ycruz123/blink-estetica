@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { WhatsAppIcon } from "./Icones";
 import { btnPrimary } from "./ui";
-import { servicos, whatsappLink } from "../lib/dados";
+import { linkWhatsApp, servicos } from "../lib/dados";
 
 const campo =
   "mt-2 w-full rounded-xl border-2 border-line bg-white px-4 text-lg text-ink outline-none placeholder:text-ink/45 focus:border-brand";
@@ -20,7 +20,7 @@ export default function FormOrcamento({ servicoInicial = "" }) {
       `Serviço: ${servico || "-"}\n\n` +
       `Descrição: ${descricao || "-"}`;
 
-    window.open(whatsappLink(msg), "_blank", "noopener,noreferrer");
+    window.open(linkWhatsApp("formulario", msg), "_blank", "noopener,noreferrer");
   };
 
   return (

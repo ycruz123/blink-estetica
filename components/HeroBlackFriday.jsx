@@ -6,7 +6,7 @@ import { ArrowRightIcon, WhatsAppIcon } from "./Icones";
 import {
   blackFridayNoAr,
   campanhaBlackFriday,
-  whatsappLink,
+  linkWhatsApp,
 } from "../lib/dados";
 
 const descricao =
@@ -54,7 +54,7 @@ export default function HeroBlackFriday() {
         </picture>
 
         <a
-          href={whatsappLink(campanhaBlackFriday.msgWhatsApp)}
+          href={linkWhatsApp("banner-black-friday", campanhaBlackFriday.msgWhatsApp)}
           target="_blank"
           rel="noopener noreferrer"
           className="absolute left-[6.5%] right-[6.5%] top-[84.5%] inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-white px-5 text-base font-bold text-ink transition-colors hover:bg-brand-soft lg:left-[6.25%] lg:right-auto lg:top-[76%] lg:h-14 lg:px-7 lg:text-lg"

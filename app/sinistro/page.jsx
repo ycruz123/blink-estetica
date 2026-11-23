@@ -17,7 +17,7 @@ import {
   servicos,
   siteUrl,
   telefoneLigar,
-  whatsappLink,
+  linkWhatsApp,
 } from "../../lib/dados";
 
 const titulo = "Oficina parceira de seguradoras na Barra da Tijuca";
@@ -84,7 +84,7 @@ export default function PaginaSinistro() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8">
               <a
-                href={whatsappLink(msgSinistro)}
+                href={linkWhatsApp("pagina-sinistro", msgSinistro)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={btnPrimary}

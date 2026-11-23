@@ -26,7 +26,7 @@ import {
   msgSinistro,
   passosSinistro,
   telefoneLigar,
-  whatsappLink,
+  linkWhatsApp,
 } from "../lib/dados";
 
 export default function Home() {
@@ -53,7 +53,7 @@ export default function Home() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-8">
               <a
-                href={whatsappLink(msgOrcamento)}
+                href={linkWhatsApp("inicio", msgOrcamento)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={btnPrimary}
@@ -130,7 +130,7 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <a
-              href={whatsappLink(msgSinistro)}
+              href={linkWhatsApp("inicio-sinistro", msgSinistro)}
               target="_blank"
               rel="noopener noreferrer"
               className={btnPrimary}
@@ -167,7 +167,7 @@ export default function Home() {
                   </p>
                 </div>
                 <a
-                  href={whatsappLink(msgFoto)}
+                  href={linkWhatsApp("enviar-foto", msgFoto)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-white px-5 text-base font-semibold md:min-h-[52px] md:px-6 md:text-lg text-ink transition-colors hover:bg-brand-soft md:self-start"
