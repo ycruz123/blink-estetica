@@ -21,3 +21,11 @@ exemplos do próprio site da Blink. Trilha de estudo combinada:
 5. Blogs e conteúdo
 O progresso fica em `docs/PROJETO-BLINK.md`, na seção "Aulas".
 
+
+## Ao publicar mudanças no site
+
+Sempre que uma mudança alterar algo visível no site, mande ao Yuri o **link
+exato** de onde mudou, depois de confirmar que está no ar. Use a página e, se
+for uma seção, a âncora: `https://www.blinkautomotiva.com.br/` (topo da
+inicial), `/#seguradoras`, `/#servicos`, `/#galeria`, `/#contato`, `/sinistro`
+ou `/<serviço>` (ex.: `/lanternagem`).
