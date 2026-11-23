@@ -33,7 +33,14 @@ Automotivo.
 (a higienização pode voltar quando houver profissional; o Instagram ainda tem
 um vídeo antigo sobre ela). Não colocar no site.
 
-**Campanha ativa:** quem segue o Instagram ganha 10% de desconto em serviços
+**Black Friday 2026 (ativa):** 15% de desconto em serviços particulares.
+Faixa no topo de todas as páginas com botão para o WhatsApp ("quero aproveitar
+os 15% de desconto da Black Friday"). Enquanto ativa, substitui a faixa de
+endereço/horário (computador) e pausa o aviso do Instagram. Liga/desliga em
+`campanhaBlackFriday.ativa` em `lib/dados.js`. **Pendente confirmar:** período
+de validade e se acumula com os 10% do Instagram.
+
+**Campanha do Instagram:** quem segue o Instagram ganha 10% de desconto em serviços
 particulares (pedido do Yuri). Aparece como aviso discreto no canto da tela,
 **só na página inicial**, toda vez que a pessoa entra ou volta para ela (após
 rolar a página ou 8 segundos). Se fechar, não volta enquanto estiver na página;
