@@ -37,8 +37,10 @@ um vídeo antigo sobre ela). Não colocar no site.
 Faixa no topo de todas as páginas com botão para o WhatsApp ("quero aproveitar
 os 15% de desconto da Black Friday"). Enquanto ativa, substitui a faixa de
 endereço/horário (computador) e pausa o aviso do Instagram. Liga/desliga em
-`campanhaBlackFriday.ativa` em `lib/dados.js`. **Pendente confirmar:** período
-de validade e se acumula com os 10% do Instagram.
+`campanhaBlackFriday.ativa` em `lib/dados.js`. **Válido de 23/11 até 30/11/2026,
+não cumulativo** com os 10% do Instagram. A faixa some sozinha no navegador a
+partir de 01/12 (`campanhaBlackFriday.fim`), e há um lembrete agendado para
+desligá-la no código em 01/12.
 
 **Campanha do Instagram:** quem segue o Instagram ganha 10% de desconto em serviços
 particulares (pedido do Yuri). Aparece como aviso discreto no canto da tela,
