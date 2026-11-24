@@ -46,6 +46,17 @@ não cumulativo** com os 10% do Instagram. A faixa some sozinha no navegador a
 partir de 01/12 (`campanhaBlackFriday.fim`), e há um lembrete agendado para
 desligá-la no código em 01/12.
 
+**Regra da Black Friday (confirmada pelo Yuri):** os 15% valem para quem segue
+o Instagram; quem não segue é convidado a seguir na hora, no atendimento. Por
+isso a arte e o site **não** precisam dizer "só para seguidores".
+
+**Promoção de sinistro (vídeo do Ricardo, 24/11):** segurados e terceiros da
+Porto Seguro, Azul ou Itaú que vierem com sinistro até 31/12/2026 ganham um
+polimento técnico de cortesia. Seção "Recado do Ricardo" (`components/VideoRicardo.jsx`)
+na página inicial (abaixo do banner da Black Friday) e em `/sinistro`. Vídeo
+com legenda e play manual. Até 30/11 usa a versão completa; em dezembro, a
+versão sem a fala da Black Friday (cortada de 0:17 a 0:25); some em 01/01/2027.
+
 **Campanha do Instagram:** quem segue o Instagram ganha 10% de desconto em serviços
 particulares (pedido do Yuri). Aparece como aviso discreto no canto da tela,
 **só na página inicial**, toda vez que a pessoa entra ou volta para ela (após

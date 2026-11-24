@@ -14,6 +14,7 @@ import {
 } from "../components/Blocos";
 import CampanhaInstagram from "../components/CampanhaInstagram";
 import HeroBlackFriday from "../components/HeroBlackFriday";
+import VideoRicardo from "../components/VideoRicardo";
 import HeroCarrossel from "../components/HeroCarrossel";
 import SecaoContato from "../components/SecaoContato";
 import { btnPrimary, btnSecondary, Eyebrow, TituloSecao } from "../components/ui";
@@ -33,6 +34,8 @@ export default function Home() {
   return (
     <>
       <HeroBlackFriday />
+
+      <VideoRicardo origem="video-ricardo-inicio" className="bg-mist" />
 
       {/* INÍCIO */}
       <section id="inicio" className="bg-paper">
