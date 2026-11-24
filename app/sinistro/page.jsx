@@ -8,6 +8,7 @@ import {
   PassosNumerados,
 } from "../../components/Blocos";
 import SecaoContato from "../../components/SecaoContato";
+import VideoRicardo from "../../components/VideoRicardo";
 import { btnPrimary, btnSecondary, Eyebrow, JsonLd, TituloSecao } from "../../components/ui";
 import {
   empresaId,
@@ -112,6 +113,8 @@ export default function PaginaSinistro() {
           </div>
         </div>
       </section>
+
+      <VideoRicardo origem="video-ricardo-sinistro" className="bg-paper" />
 
       <section className="bg-mist py-14 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-6">
